@@ -15,18 +15,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, toRef } from 'vue';
-import { globalState } from '../store';
+import { defineComponent, toRef } from 'vue'
+import { globalState } from '../store'
 
 export default defineComponent({
   props: {
-    msg: String,
+    msg: {
+      type: String,
+      default: '',
+    },
   },
 
   setup() {
     return {
       count: toRef(globalState, 'count'),
-    };
+    }
   },
-});
+})
 </script>
