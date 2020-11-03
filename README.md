@@ -1,4 +1,4 @@
-# Vue 3, Vite, TypeScript & Tailwind CSS Starter
+# Vue 3, TypeScript & Tailwind CSS Starter
 
 > A simple, Vue 3 starter with TypeScript support
 
