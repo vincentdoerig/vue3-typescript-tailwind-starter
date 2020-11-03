@@ -33,6 +33,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,vue,html}": "eslint --cache --fix"
+    "*.{js,ts,vue}": "eslint --cache --fix"
   }
 }
