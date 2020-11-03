@@ -2,7 +2,7 @@
   <div class="prose max-w-none">
     <h1>{{ msg }}</h1>
     <p class="lead">
-      This starter is an opinionated Vue 3, TypeScript, Tailwind CSS and ESLint template.
+      An opinionated Vue 3, TypeScript, Tailwind CSS and ESLint template.
     </p>
     <p>
       View this project on <a
@@ -16,7 +16,7 @@
         for="project-name"
         class="block text-sm font-medium leading-5 text-gray-700"
       >Project name</label>
-      <div class="relative mt-1 rounded-md shadow-sm">
+      <div class="relative max-w-xs mt-1 rounded-md shadow-sm">
         <input
           id="project-name"
           v-model="name"
