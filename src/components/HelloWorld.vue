@@ -1,21 +1,67 @@
 <template>
   <div class="prose max-w-none">
     <h1>{{ msg }}</h1>
-    <span class="inline-flex rounded-md shadow-sm">
-      <button
-        type="button"
-        class="inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700"
-        @click="count++"
-      >
-        you clicked me {{ count }} times
-      </button>
-    </span>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae beatae velit aliquam reiciendis. Tenetur veritatis rem, minima magni amet aut sit adipisci ab minus fuga error dolores accusantium quia assumenda officia ratione sapiente provident voluptatem reiciendis deleniti nam! Voluptas quia quasi totam architecto molestias ullam veritatis necessitatibus fugit placeat repudiandae, soluta eos assumenda minima id debitis, praesentium itaque beatae! Deserunt ad cumque autem unde enim, perspiciatis distinctio consectetur, doloremque sit earum veniam debitis et magnam obcaecati. Mollitia voluptates ea expedita distinctio eaque consequatur quae, consequuntur, provident quos veniam libero est culpa saepe ex dolorem laborum quam, quasi illo! Veniam, necessitatibus.</p>
+    <p class="lead">
+      This starter is an opinionated Vue 3, TypeScript, Tailwind CSS and ESLint template.
+    </p>
+    <p>
+      View this project on <a
+        href="https://github.com/vincentdoerig/vue3-typescript-tailwind-starter"
+      >GitHub</a>. It uses <a href="https://github.com/vitejs/vite">vite</a> to provide a fast development experience with hot module replacement. Try it out by editing <code>components/HelloWorld.vue</code>.
+    </p>
+    <h2>Installing</h2>
+    <p>To quickly get started, enter a project name and run the commands below.</p>
+    <div>
+      <label
+        for="project-name"
+        class="block text-sm font-medium leading-5 text-gray-700"
+      >Project name</label>
+      <div class="relative mt-1 rounded-md shadow-sm">
+        <input
+          id="project-name"
+          v-model="name"
+          class="block w-full form-input sm:text-sm sm:leading-5"
+          placeholder="vue3-exploration"
+          aria-describedby="text-description"
+        >
+      </div>
+    </div>
+    <pre><span class="text-gray-500"># clone the starter</span>
+git clone https://github.com/vincentdoerig/vue3-typescript-tailwind-starter {{ name || '&lt;project-name&gt;' }}
+cd {{ name || '&lt;project-name&gt;' }}
+rm -rf .git <span class="text-gray-500"># remove git folder</span>
+git init <span class="text-gray-500"># initialise git for your new project</span></pre>
+    <p>
+      Alternatively, use this starter by clicking the <code>Use this template</code> button on <a
+        href="https://github.com/vincentdoerig/vue3-typescript-tailwind-starter"
+      >GitHub</a>.
+    </p>
+    <h2>Simple reactive state example</h2>
+    <div class="flex">
+      <span class="inline-flex mr-2 rounded-md shadow-sm">
+        <button
+          type="button"
+          class="inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 tabular-nums"
+          @click="count++"
+        >
+          you clicked me {{ count }} times
+        </button>
+      </span>
+      <span class="inline-flex rounded-md shadow-sm">
+        <button
+          type="button"
+          class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-red-700 transition duration-150 ease-in-out bg-red-100 border border-transparent rounded-md hover:bg-red-50 focus:outline-none focus:border-red-300 focus:shadow-outline-red active:bg-red-200"
+          @click="count = 0"
+        >
+          clear
+        </button>
+      </span>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, toRef } from 'vue'
+import { defineComponent, toRef, ref } from 'vue'
 import { globalState } from '../store'
 
 export default defineComponent({
@@ -29,7 +75,14 @@ export default defineComponent({
   setup() {
     return {
       count: toRef(globalState, 'count'),
+      name: ref(''),
     }
   },
 })
 </script>
+
+<style>
+.prose a {
+  @apply text-gray-900 underline !important;
+}
+</style>
