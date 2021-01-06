@@ -13,9 +13,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/ui')],
-  future: {
-    purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true,
-  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 }

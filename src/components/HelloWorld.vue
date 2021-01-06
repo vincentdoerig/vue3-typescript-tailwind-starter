@@ -20,7 +20,8 @@
         <input
           id="project-name"
           v-model="name"
-          class="block w-full form-input sm:text-sm sm:leading-5"
+          type="text"
+          class="block w-full rounded sm:text-sm sm:leading-5"
           placeholder="vue3-exploration"
           aria-describedby="text-description"
         >
@@ -41,7 +42,7 @@ git init <span class="text-gray-500"># initialise git for your new project</span
       <span class="inline-flex mr-2 rounded-md shadow-sm">
         <button
           type="button"
-          class="inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out bg-red-600 border border-transparent rounded-md hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 tabular-nums"
+          class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 tabular-nums"
           @click="count++"
         >
           you clicked me {{ count }} times
@@ -50,7 +51,7 @@ git init <span class="text-gray-500"># initialise git for your new project</span
       <span class="inline-flex rounded-md shadow-sm">
         <button
           type="button"
-          class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-red-700 transition duration-150 ease-in-out bg-red-100 border border-transparent rounded-md hover:bg-red-50 focus:outline-none focus:border-red-300 focus:shadow-outline-red active:bg-red-200"
+          class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-red-700 transition duration-150 ease-in-out bg-red-100 border border-transparent rounded-md hover:bg-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-300"
           @click="count = 0"
         >
           clear
