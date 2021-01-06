@@ -10,6 +10,7 @@
 - TypeScript
 - Tailwind CSS
 - Simple store with global state
+- Vue Router
 - ESLint
 
 ## Project setup and usage

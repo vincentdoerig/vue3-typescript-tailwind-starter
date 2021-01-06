@@ -9,6 +9,13 @@
         href="https://github.com/vincentdoerig/vue3-typescript-tailwind-starter"
       >GitHub</a>. It uses <a href="https://github.com/vitejs/vite">vite</a> to provide a fast development experience with hot module replacement. Try it out by editing <code>components/HelloWorld.vue</code>.
     </p>
+    <p>
+      Vue router is also included and configured, you could try navigating to <router-link to="/about">
+        another page
+      </router-link> or to a page that <router-link to="/foo">
+        does not exist
+      </router-link>.
+    </p>
     <h2>Installing</h2>
     <p>To quickly get started, enter a project name and run the commands below.</p>
     <div>

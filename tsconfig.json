@@ -7,7 +7,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "experimentalDecorators": true,
-    "lib": ["dom", "esnext"]
+    "lib": ["dom", "esnext"],
+    "types": ["vite/client"]
   },
   "exclude": ["node_modules", "dist", "public"]
 }
