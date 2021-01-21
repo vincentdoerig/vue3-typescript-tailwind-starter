@@ -10,27 +10,27 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.2.1",
-    "@tailwindcss/typography": "^0.3.1",
-    "@vitejs/plugin-vue": "^1.0.4",
-    "autoprefixer": "^10.2.0",
-    "postcss": "^8.2.2",
+    "@tailwindcss/typography": "^0.4.0",
+    "@vitejs/plugin-vue": "^1.1.0",
     "tailwindcss": "^2.0.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.12.0",
-    "@typescript-eslint/parser": "^4.12.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/eslint-config-typescript": "^7.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.17.0",
+    "eslint": "^7.18.0",
     "eslint-plugin-vue": "^7.4.1",
-    "husky": "^4.3.6",
+    "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3",
-    "vite": "^2.0.0-beta.9"
+    "vite": "^2.0.0-beta.36",
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4"
   },
   "husky": {
     "hooks": {

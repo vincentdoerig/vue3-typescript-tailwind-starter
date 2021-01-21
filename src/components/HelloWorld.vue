@@ -49,7 +49,7 @@ git init <span class="text-gray-500"># initialise git for your new project</span
       <span class="inline-flex mr-2 rounded-md shadow-sm">
         <button
           type="button"
-          class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 tabular-nums"
+          class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 tabular-nums"
           @click="count++"
         >
           you clicked me {{ count }} times
