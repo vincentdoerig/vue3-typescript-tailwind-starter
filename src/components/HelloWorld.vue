@@ -12,7 +12,8 @@
     <p>
       Vue router is also included and configured, you could try navigating to <router-link to="/about">
         another page
-      </router-link> or to a page that <router-link to="/foo">
+      </router-link> or to a page that
+      <router-link to="/foo">
         does not exist
       </router-link>.
     </p>
